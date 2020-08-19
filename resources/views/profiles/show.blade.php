@@ -24,5 +24,16 @@
       </div>
        </div>
     </div>
+    <div class="row mt-5">
+      <div class="col-4">
+      <img src="https://pic.clubic.com/v1/images/1709824/raw?width=1200&fit=max&hash=7f85d010f7a3e04441678a1fca2755747ec4ee14" class="w-100">
+      </div>
+      <div class="col-4">
+      <img src="https://i.pinimg.com/originals/69/95/82/699582a988a09140e3441953dc800540.png" class="w-100">
+      </div>
+      <div class="col-4">
+      <img src="https://2j9zen46cyp13k47i01s551m-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/creer-son-site-internet.png" class="w-100">
+      </div>
+    </div>
 </div>
 @endsection
