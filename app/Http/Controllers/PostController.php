@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Intervention\Image\Facades\Image;
 
 class PostController extends Controller
 {
@@ -25,6 +27,9 @@ class PostController extends Controller
 
         $imagePath = request('image')->store('uploads', 'public');
 
+        $image=Image::make(public_path("/storage/[$imagePath]"))->fit(1200,1200);
+        $image->save();
+    
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
             'image' => $imagePath       // on ne peut pas mettre $data['image'] car c est un chemin temporaire et pas le chemin effectif de l'image
