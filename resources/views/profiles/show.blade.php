@@ -18,9 +18,9 @@
         <div class="mr-3"><strong>20</strong> abonnements</div>
       </div>
       <div class="mt-3">
-      <div class="font-weight-bold">framework Laravel</div>
-      <div>Apprenez à utiliser Laravel</div>
-      <a href="#">Laravel.com</a>
+      <div class="font-weight-bold">{{ $user->profile->title }}</div>
+      <div>{{ $user->profile->description }}</div>
+      <a href="{{ $user->profile->url }}">{{ $user->profile->url }}</a>
       </div>
        </div>
     </div>
