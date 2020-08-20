@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use phpDocumentor\Reflection\Types\Parent_;
 
 class User extends Authenticatable
 {
@@ -36,6 +37,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(function($user)
+        {
+            $user->profile()->create([
+                'title' => 'Profile de '. $user->username
+            ]);
+        });
+        
+    }
+    
     public function getRouteKeyName()
     {
            return 'username';
