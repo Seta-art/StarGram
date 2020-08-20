@@ -10,9 +10,17 @@ class PostController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function create()
     {
         return view('posts.create');
+    }
+
+    public function store()
+    {
+        request()->validate([
+         'caption' => ['required', 'string'],
+         'image' => ['required', 'image']
+        ]);
     }
 }
