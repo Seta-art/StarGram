@@ -8,7 +8,7 @@
                 <div class="card-header">Modifier mon profile</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('profiles.update', ['user' => $user) }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('profiles.update', ['user' => $user]) }}" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
 
