@@ -19,7 +19,7 @@
       </div>
 
       @can('update', $user->profile)
-      <a href="{{ route('profiles.edit',['username' => $user->username]) }}" class="btn btn-outline-secondary mt-3">Modifier mes informations</a>
+      <a href="{{ route('profiles.edit',['user' => $user->username]) }}" class="btn btn-outline-secondary mt-3">Modifier mes informations</a>
       @endcan
       
       <div class="mt-3">
