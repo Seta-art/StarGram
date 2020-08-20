@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row mt-4">
        <div class="col-4 text-center">
-       <img src="https://www.secret-source.eu/wp-content/uploads/2017/11/Laravel-logo.jpg" class="rounded-circle">
+       <img src="{{ $user->profile->getImage() }}" class="rounded-circle w-100" style="max-width: 200px">
        </div>
 
        <div class="col-8">
