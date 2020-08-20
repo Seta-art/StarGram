@@ -29,5 +29,7 @@ class PostController extends Controller
             'caption' => $data['caption'],
             'image' => $imagePath       // on ne peut pas mettre $data['image'] car c est un chemin temporaire et pas le chemin effectif de l'image
         ]);
+
+        return redirect()->route('profiles.show', ['user' => auth()->user()]);
     }
 }
