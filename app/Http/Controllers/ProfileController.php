@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class ProfileController extends Controller
+
 {
     public function show(User $user)
     {
@@ -24,10 +26,25 @@ class ProfileController extends Controller
         $data = request()->validate([
             'title' => 'required',
             'description' => 'required',
-            'url' => 'required|url'
+            'url' => 'required|url',
+            'image' => 'sometimes|image|max:3000'
         ]);
 
-        auth()->user()->profile->update($data);
+        if (request('image')) {
+            $imagePath = request('image')->store('avatars', 'public');
+            $image=Image::make(public_path("/storage/[$imagePath]"))->fit(800,800);
+            $image->save();
+            
+            auth()->user()->profile->update(array_merge(
+                $data,
+                ['image'=>$imagePath]
+            ));
+        }
+        else {
+            auth()->user()->profile->update($data);
+        }
+
+        
 
         return redirect()->route('profiles.show', ['user' =>$user]);
     }
