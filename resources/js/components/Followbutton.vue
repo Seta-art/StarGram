@@ -1,6 +1,6 @@
 <template>
     <div>
-    <button class="btn btn-sm btn-primary" @click='followProfile' v-text="follows"></button>
+    <button class="btn btn-sm btn-primary" @click='followProfile' v-text="follow"></button>
     </div>
 </template>
 
@@ -9,6 +9,11 @@
      
      props: ['profileId', 'follows'],
 
+     data: function(){
+        return {
+          status: this.follows
+        }
+     },
      methods: {
      	followProfile(){
      	axios.post('/follows/' + this.profileId)
@@ -24,8 +29,8 @@
      },
 
      computed: {
-     follows(){
-        return (this.follows) ? 'Desabonner' : 'Abonner';
+     follow(){
+        return (this.status) ? 'Desabonner' : 'Abonner';
        }
      }
     }

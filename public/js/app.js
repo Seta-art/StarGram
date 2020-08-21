@@ -1916,6 +1916,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['profileId', 'follows'],
+  data: function data() {
+    return {
+      status: this.follows
+    };
+  },
   methods: {
     followProfile: function followProfile() {
       axios.post('/follows/' + this.profileId).then(function (response) {
@@ -1928,8 +1933,8 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   computed: {
-    follows: function follows() {
-      return this.follows ? 'Desabonner' : 'Abonner';
+    follow: function follow() {
+      return this.status ? 'Desabonner' : 'Abonner';
     }
   }
 });
@@ -37521,7 +37526,7 @@ var render = function() {
   return _c("div", [
     _c("button", {
       staticClass: "btn btn-sm btn-primary",
-      domProps: { textContent: _vm._s(_vm.follows) },
+      domProps: { textContent: _vm._s(_vm.follow) },
       on: { click: _vm.followProfile }
     })
   ])
