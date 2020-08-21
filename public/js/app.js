@@ -1923,8 +1923,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     followProfile: function followProfile() {
+      var _this = this;
+
       axios.post('/follows/' + this.profileId).then(function (response) {
-        console.log(response.data);
+        _this.status = !_this.status;
       })["catch"](function (errors) {
         if (errors.response.status == 401) {
           window.location = '/login';

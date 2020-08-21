@@ -14,8 +14,8 @@
       </div>
       <div class="d-flex mt-3">
         <div class="mr-3"><strong>{{ $user->posts->count() }}</strong> publication(s)</div>
-        <div class="mr-3"><strong>100</strong> abonnés</div>
-        <div class="mr-3"><strong>20</strong> abonnements</div>
+        <div class="mr-3"><strong>{{ $user->profile->followers->count() }}</strong> abonnés</div>
+        <div class="mr-3"><strong>{{ $users->following->count() }}</strong> abonnements</div>
       </div>
 
       @can('update', $user->profile)
