@@ -1914,7 +1914,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  methods: {
+    followProfile: function followProfile() {
+      axios.post('/follows/1').then(function (response) {
+        console.log(response.data);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -37500,20 +37508,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-sm btn-primary",
+        on: { click: _vm.followProfile }
+      },
+      [_vm._v("S'abonner")]
+    )
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("button", { staticClass: "btn btn-sm btn-primary" }, [
-        _vm._v("S'abonner")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
