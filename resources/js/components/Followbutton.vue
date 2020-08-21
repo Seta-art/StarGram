@@ -1,13 +1,13 @@
 <template>
     <div>
-    <button class="btn btn-sm btn-primary" @click='followProfile'>S'abonner</button>
+    <button class="btn btn-sm btn-primary" @click='followProfile' v-text="follows"></button>
     </div>
 </template>
 
 <script>
     export default {
      
-     props: ['profileId'],
+     props: ['profileId', 'follows'],
 
      methods: {
      	followProfile(){
@@ -21,6 +21,12 @@
      	     }
      	     })
      	}
+     },
+
+     computed: {
+     follows(){
+        return (this.follows) ? 'Desabonner' : 'Abonner';
+       }
      }
     }
 </script>
