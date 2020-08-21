@@ -18,7 +18,7 @@
      	followProfile(){
      	axios.post('/follows/' + this.profileId)
      	.then(response => {
-     	          console.log(response.data);
+     	      this.status= ! this.status
      	     })
      	     .catch(errors => {
      	     if(errors.response.status == 401){
