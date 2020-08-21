@@ -12,8 +12,13 @@
      methods: {
      	followProfile(){
      	axios.post('/follows/' + this.profileId)
-     	     .then(response => {
+     	.then(response => {
      	          console.log(response.data);
+     	     })
+     	     .catch(errors => {
+     	     if(errors.response.status == 401){
+     	     window.location = '/login';
+     	     }
      	     })
      	}
      }
