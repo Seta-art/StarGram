@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class FollowController extends Controller
 {
-    //
+    public function store($profile)
+    {
+    	return $profile;
+    }
 }
