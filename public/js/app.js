@@ -1915,9 +1915,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['profileId'],
   methods: {
     followProfile: function followProfile() {
-      axios.post('/follows/1').then(function (response) {
+      axios.post('/follows/' + this.profileId).then(function (response) {
         console.log(response.data);
       });
     }

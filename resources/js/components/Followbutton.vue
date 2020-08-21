@@ -7,9 +7,11 @@
 <script>
     export default {
      
+     props: ['profileId'],
+
      methods: {
      	followProfile(){
-     	axios.post('/follows/1')
+     	axios.post('/follows/' + this.profileId)
      	     .then(response => {
      	          console.log(response.data);
      	     })
