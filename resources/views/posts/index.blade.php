@@ -7,7 +7,11 @@
 			<div class="col-6 offset-3">
 				 <a href="{{ route('posts.show', ['post' => $post->id ]) }}">
                <img src="{{ asset('storage') . '/' . $post->image }}" class="w-100">
-               </a>   	
+               </a>
+               <hr>   
+               <div>
+               		Posté par <strong> {{ $post->user->username }} </strong> le {{ $post->created_at->format('d/m/Y') }}
+               </div>	
 			</div>
 		</div>
 </div>
