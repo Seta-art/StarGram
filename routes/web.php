@@ -31,3 +31,5 @@ Route::post('/posts', 'PostController@store')->name('posts.store');
 
 Route::get('/posts/{post}','PostController@show')->name('posts.show');
 Route::post('/follows/{profile}','FollowController@store')->name('follows.store');
+
+Route::get('/posts', 'PostController@index')->name('posts.index');
