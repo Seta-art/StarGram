@@ -12,6 +12,8 @@ class ProfileController extends Controller
     public function show(User $user)
     {
         $follows= (auth()->user()) ? auth()->user()->following->contains($users->profile->id) : false;
+
+        $postsCount= $user->posts->count();
         return view('profiles.show', compact('user','follows'));
     }
 
