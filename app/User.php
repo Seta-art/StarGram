@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use phpDocumentor\Reflection\Types\Parent_;
 use Illuminate\Support\Facades\Mail;
+use  App\Mail\WelcomeUserMail;
 class User extends Authenticatable
 {
     use Notifiable;
