@@ -1,6 +1,6 @@
 @Bienvenue
 
-Merci de vous etre inscrit sur notre application.
+Merci, {{ $data->username }} de vous etre inscrit sur notre application avec l'email {{ $data->email }}
 
 
 Cordialement,<br>
