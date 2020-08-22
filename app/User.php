@@ -6,7 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use phpDocumentor\Reflection\Types\Parent_;
-
+use Illuminate\Support\Facades\Mail;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -44,9 +44,11 @@ class User extends Authenticatable
 
         static::created(function($user)
         {
-            $user->profile()->create([
+            $data= $user->profile()->create([
                 'title' => 'Profile de '. $user->username
             ]);
+
+            Mail::to($data->email)->send(new WelcomeUserMail());
         });
         
     }
