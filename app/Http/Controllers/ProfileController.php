@@ -16,7 +16,7 @@ class ProfileController extends Controller
         $postsCount= $user->posts->count();
         $followersCount= $user->profile->followers->count();
         $followingCount= $user->following->count()
-        return view('profiles.show', compact('user','follows'));
+        return view('profiles.show', compact('user','follows','postsCount', 'followersCount', 'followingCount'));
     }
 
     public function edit(User $user)
