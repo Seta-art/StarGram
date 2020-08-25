@@ -4,13 +4,13 @@
 <div class="container">
     <div class="row mt-4">
        <div class="col-4 text-center">
-       <img src="{{ $user->profile->getImage() }}" class="rounded-circle w-100" style="max-width: 200px">
+       <img src="{{ $user->profile->getImage() }}" class="rounded-circle w-100" style="max-width: 230px">
        </div>
 
        <div class="col-8">
       <div class="d-flex align-items-baseline">
       <div class="h4 mr-3 pt-2">{{ $user->username }}</div>
-       <follow-button profile-id="{{ $user->profile->id}}" follows="{{ $follows }}"></follow-button>
+       <follow-button profile-id="{{ $user->profile->id }}" follows="{{ $follows }}"></follow-button>
       </div>
       <div class="d-flex mt-3">
         <div class="mr-3"><strong>{{ $postsCount }}</strong> publication(s)</div>
