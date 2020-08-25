@@ -9,13 +9,13 @@
      
      props: ['profileId', 'follows'],
 
-     data: function(){
+     data: function () {
         return {
           status: this.follows
         }
      },
      methods: {
-     	followProfile(){
+     	followProfile() {
      	axios.post('/follows/' + this.profileId)
      	.then(response => {
      	      this.status= ! this.status
