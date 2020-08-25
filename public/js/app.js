@@ -1936,7 +1936,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     follow: function follow() {
-      return this.status ? 'Desabonner' : 'Abonner';
+      return this.status ? 'Se désabonner' : 'S abonner';
     }
   }
 });

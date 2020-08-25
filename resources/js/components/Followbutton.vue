@@ -30,7 +30,7 @@
 
      computed: {
      follow(){
-        return (this.status) ? 'Desabonner' : 'Abonner';
+        return (this.status) ? 'Se désabonner' : 'S abonner';
        }
      }
     }
