@@ -1928,7 +1928,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/follows/' + this.profileId).then(function (response) {
         _this.status = !_this.status;
       })["catch"](function (errors) {
-        if (errors.response.status === 401) {
+        if (errors.response.status == 401) {
           window.location = '/login';
         }
       });
@@ -1936,7 +1936,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     follow: function follow() {
-      return this.status ? 'Ne plus suivre' : 'Suivre';
+      return this.status ? 'Desabonner' : 'Abonner';
     }
   }
 });
