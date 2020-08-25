@@ -21,7 +21,7 @@ class WelcomeUserMail extends Mailable
      */
     public function __construct(User $data)
     {
-        $this->data= $data;
+        $this->data = $data;
     }
 
     /**
