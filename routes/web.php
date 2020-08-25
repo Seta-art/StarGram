@@ -23,13 +23,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profiles/{user}', 'ProfileController@show')->name('profiles.show');
-Route::get('/profiles/{user}/edit','ProfileController@edit')->name('profiles.edit');
-Route::patch('/profiles/{user}','ProfileController@update')->name('profiles.update');
+Route::get('/profiles/{user}/edit', 'ProfileController@edit')->name('profiles.edit');
+Route::patch('/profiles/{user}', 'ProfileController@update')->name('profiles.update');
 
 Route::get('/posts/create', 'PostController@create')->name('posts.create');
 Route::post('/posts', 'PostController@store')->name('posts.store');
 
-Route::get('/posts/{post}','PostController@show')->name('posts.show');
-Route::post('/follows/{profile}','FollowController@store')->name('follows.store');
+Route::get('/posts/{post}', 'PostController@show')->name('posts.show');
+Route::post('/follows/{profile}', 'FollowController@store')->name('follows.store');
 
 Route::get('/posts', 'PostController@index')->name('posts.index');
