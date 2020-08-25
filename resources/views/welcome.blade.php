@@ -12,8 +12,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: black;
+                color: white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,7 +49,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: blue;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -57,10 +57,36 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .links > a:hover {
+                border-bottom: 1px solid;     
+                background: #CDFEAA;
+            }
+            .links > a:focus {
+            color: yellow;
+            }
 
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+.monBoutton {
+    background-color: #007BFF;
+    Color:white;
+    font-weight: bold;
+    padding: 10px 40px;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 3px;
+    cursor: pointer; 
+    box-shadow: 0 8px 16px 0 grey;
+    text-decoration: none;
+  }
+  #foot {
+position: absolute;
+bottom: 0px;
+text-align: center;
+}
+
         </style>
     </head>
     <body>
@@ -81,20 +107,21 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    StarGram
                 </div>
-
+               <div> InstaGram 2.0</div>
+               <br>
+               <br>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    
+                <a href="{{ route('login') }}" class="monBoutton">Se connecter</a>
+                <a href="{{ route('register') }}" class="monBoutton">S'inscrire</a>
+                <a href="https://github.com/Seta-art/StarGram" class="monBoutton">GitHub</a>
                 </div>
             </div>
         </div>
+        <div id="foot">
+        <p>© 2020 BlackCodders</p>
+    </div>
     </body>
 </html>
