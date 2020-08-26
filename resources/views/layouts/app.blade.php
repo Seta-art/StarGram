@@ -54,6 +54,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a href="{{ route('profiles.show',['user' => auth()->user()->username]) }}" class="dropdown-item">Voir mon profil</a>
                                     <a href="{{ route('posts.create') }}" class="dropdown-item">Créer un post</a>
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"
