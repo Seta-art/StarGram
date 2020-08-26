@@ -113,9 +113,15 @@ text-align: center;
                <br>
                <br>
                 <div class="links">
-                    
-                <a href="{{ route('login') }}" class="monBoutton">Se connecter</a>
-                <a href="{{ route('register') }}" class="monBoutton">S'inscrire</a>
+                @auth
+                        <a href="{{ url('/home') }}" class="monBoutton">Home</a>
+                    @else
+                    <a href="{{ route('login') }}" class="monBoutton">Se connecter</a>
+
+                        @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="monBoutton">S'inscrire</a>
+                        @endif
+                    @endauth
                 <a href="https://github.com/Seta-art/StarGram" class="monBoutton">GitHub</a>
                 </div>
             </div>
