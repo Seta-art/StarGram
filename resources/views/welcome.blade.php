@@ -127,7 +127,7 @@ text-align: center;
             </div>
         </div>
         <div id="foot">
-        <p>© 2020 BlackCodders</p>
+        <p>© 2020 Stargram. </p>
     </div>
     </body>
 </html>
