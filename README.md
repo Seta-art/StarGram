@@ -1,5 +1,5 @@
 
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/logo.PNG)
+![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/Logo.PNG)
 ## A Propos
 StarGram est un réseau social réalisé avec laravel et basé sur instagram
 
@@ -82,15 +82,15 @@ MAIL_ENCRYPTION=null
    </table>
 
 ### Quelques Screenshots d'utilisation du projet:
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/1.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/3.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/4.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/5.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/6.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/7.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/8.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/9.PNG)
-![alt tag](https://github.com/Seta-art/StarGram/blob/master/Screenschots/10.PNG)
+![Inscription](https://github.com/Seta-art/StarGram/blob/master/Screenschots/1.PNG)
+![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2PNG)
+![Fonctionnalités](https://github.com/Seta-art/StarGram/blob/master/Screenschots/3.PNG)
+![Creation de post](https://github.com/Seta-art/StarGram/blob/master/Screenschots/4.PNG)
+![Affichage de Profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/5.PNG)
+![Edition du profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/6.PNG)
+![Abonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/7.PNG)
+![Desabonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/8.PNG)
+![Affichage de posts](https://github.com/Seta-art/StarGram/blob/master/Screenschots/9.PNG)
+![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/10.PNG)
 ## Licence
 Le framework Laravel est un logiciel open source sous licence [MIT license](https://opensource.org/licenses/MIT).
