@@ -28,8 +28,8 @@ Il s'agit notamment de changer les inforamtions suivantes:
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
-'MAIL_USERNAME' =null
-"MAIL_PASSWORD" =null
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 ```
 * Exécuter les commandes suivantes à la racine du projet:  
@@ -52,6 +52,13 @@ MAIL_ENCRYPTION=null
 
 >>php artisan migrate
 ``` 
+## Fonctionnalités
+<table>
+    <tr>
+        <td>Fonctionnalités</td>
+        <td> Description</td>
+    </tr>
+   </table>
 
 ## Licence
 Le framework Laravel est un logiciel open source sous licence [MIT license](https://opensource.org/licenses/MIT).
