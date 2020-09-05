@@ -59,16 +59,16 @@ MAIL_ENCRYPTION=null
         <th> Description</th>
     </tr>
     <tr>
-        <th>Création d'un Profil et Gestiond'un profil</th>
+        <th>Création et Gestion d'un profil</th>
         <td> L'application permet de créer un profil avec un nom d'utilisateur unique mais égaalement prend en charge l'édition du profil et des informations de l'utilisateur ainsi que de sa photo de profil</td>
     </tr>
     <tr>
         <th>Création et Gestion des  posts ou publications</th>
-        <th> Cette application permet de créer des posts et aussi de les afficher selon l'historique de publication</th>
+        <td> Cette application permet de créer des posts et aussi de les afficher selon l'historique de publication</td>
     </tr>
     <tr>
         <th>Système d'Abonnnement</th>
-        <th> On peut s'abonner ou se désabonner à un profil avec actualisation des indices representants le nombre de followers et de following d'un utilisateur</th>
+        <td> On peut s'abonner ou se désabonner à un profil avec actualisation des indices representants le nombre de followers et de following d'un utilisateur</td>
     </tr>
     <tr>
         <th>Messagerie</th>
@@ -76,9 +76,10 @@ MAIL_ENCRYPTION=null
     </tr>
     <tr>
         <th>Système de Cache</th>
-        <th> Tout comme la verssion connue d'Instgram, StarGram pends en carge le sytème de cache dans le but de gérer la fréquence d'utilisation de certaines informations</th>
+        <td> Tout comme la verssion connue d'Instgram, StarGram prends en charge le sytème de cache dans le but de gérer la fréquence d'utilisation de certaines informations et de les conserver au niveau du navigateur ce qui rends les requêtes beaucoup plus rapides</td>
     </tr>
    </table>
 
+### Quelques Screenshots d'utilisation du projet:
 ## Licence
 Le framework Laravel est un logiciel open source sous licence [MIT license](https://opensource.org/licenses/MIT).
