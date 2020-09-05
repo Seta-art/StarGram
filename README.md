@@ -82,14 +82,22 @@ MAIL_ENCRYPTION=null
    </table>
 
 ### Quelques Screenshots d'utilisation du projet:
+**Inscription**
 ![Inscription](https://github.com/Seta-art/StarGram/blob/master/Screenschots/1.PNG)
-![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2PNG)
+![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2.PNG)
+**Fonctionnalités**
 ![Fonctionnalités](https://github.com/Seta-art/StarGram/blob/master/Screenschots/3.PNG)
+**Creation de post**
 ![Creation de post](https://github.com/Seta-art/StarGram/blob/master/Screenschots/4.PNG)
+**Affichage de Profil**
 ![Affichage de Profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/5.PNG)
+**Edition du profil**
 ![Edition du profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/6.PNG)
+**Abonnement**
 ![Abonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/7.PNG)
+**Desabonnement**
 ![Desabonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/8.PNG)
+**Affichage de posts**
 ![Affichage de posts](https://github.com/Seta-art/StarGram/blob/master/Screenschots/9.PNG)
 ![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/10.PNG)
 ## Licence
