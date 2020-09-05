@@ -84,21 +84,23 @@ MAIL_ENCRYPTION=null
 ### Quelques Screenshots d'utilisation du projet:
 **Inscription**
 ![Inscription](https://github.com/Seta-art/StarGram/blob/master/Screenschots/1.PNG)
-![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2.PNG)
+![alt](https://github.com/Seta-art/StarGram/blob/master/Screenschots/2.PNG)
+<br>
 **Fonctionnalités**
-![Fonctionnalités](https://github.com/Seta-art/StarGram/blob/master/Screenschots/3.PNG)
-**Creation de post**
-![Creation de post](https://github.com/Seta-art/StarGram/blob/master/Screenschots/4.PNG)
-**Affichage de Profil**
-![Affichage de Profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/5.PNG)
-**Edition du profil**
-![Edition du profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/6.PNG)
-**Abonnement**
-![Abonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/7.PNG)
-**Desabonnement**
-![Desabonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/8.PNG)
-**Affichage de posts**
-![Affichage de posts](https://github.com/Seta-art/StarGram/blob/master/Screenschots/9.PNG)
-![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/10.PNG)
+<br>
+![Fonctionnalités](https://github.com/Seta-art/StarGram/blob/master/Screenschots/3.PNG)<br>
+**Creation de post** <br>
+![Creation de post](https://github.com/Seta-art/StarGram/blob/master/Screenschots/4.PNG)<br>
+**Affichage de Profil** <br>
+![Affichage de Profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/5.PNG) <br>
+**Edition du profil** <br>
+![Edition du profil](https://github.com/Seta-art/StarGram/blob/master/Screenschots/6.PNG) <br>
+**Abonnement** <br>
+![Abonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/7.PNG) <br>
+**Desabonnement** <br>
+![Desabonnement](https://github.com/Seta-art/StarGram/blob/master/Screenschots/8.PNG) <br>
+**Affichage de posts** <br>
+![Affichage de posts](https://github.com/Seta-art/StarGram/blob/master/Screenschots/9.PNG) <br>
+![alt](https://github.com/Seta-art/StarGram/blob/master/Screenschots/10.PNG) <br>
 ## Licence
 Le framework Laravel est un logiciel open source sous licence [MIT license](https://opensource.org/licenses/MIT).
