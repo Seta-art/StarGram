@@ -67,10 +67,7 @@ class ProfileController extends Controller
     public function search()
     {
         $q = request()->input('q');
-        //dd($q);
-
-        $profiles=Profile::where('title','like','%$q%');
-
-        return view('profiles.search')->with('profiles',$profiles);
+        $Users=User::where('username','like','%$q%')->get();
+        return view('profiles.search',compact('Users'));
     }
 }
