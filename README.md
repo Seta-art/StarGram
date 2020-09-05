@@ -13,6 +13,28 @@ Laravel est un framework d'application Web avec une syntaxe expressive et élég
 * OpenSSL PHP Extension
 * PDO PHP Extension
 * NodeJS
-## Licence
 
+## Contributeurs
+* Seta-Art
+* Tatani Herman
+* Ngan Joseph (linker)
+
+## Comment l'Utiliser
+* Cloner le projet avec la commande **git clone** ou directement sur github
+* Créer le fichier **.env** à la racine du répertoire et y coller le contenu du fichier **.env.example**
+*  Dans le fichier **.env** configurer le service de mail. Les informations sont disponibles sur mailtrap.io
+* Exécuter les commandes suivantes à la racine du projet  
+```bash  
+>>composer install
+>>php artisan key:generate 
+>>artisan storage:link
+>>composer require intervention/image
+>>composer require laravel/telescope
+>>php artisan telescope: install
+>>npm install
+>>npm run watch 
+>>php artisan migrate
+``` 
+
+## Licence
 Le framework Laravel est un logiciel open source sous licence [MIT license](https://opensource.org/licenses/MIT).
