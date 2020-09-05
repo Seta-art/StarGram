@@ -25,12 +25,12 @@ Laravel est un framework d'application Web avec une syntaxe expressive et élég
 *  Dans le fichier **.env** configurer le service de mail. Les informations sont disponibles sur mailtrap.io
 Il s'agit notamment de changer les inforamtions suivantes:
 ```python
-'MAIL_DRIVER'=smtp
-'MIAL_HOST'=smtp.mailtrap.io
-'MAIL_PORT'=2525
-'MIAL_USERNAME'=null
-'MAIL_PASSWORD'=null
-'MIAL_ENCRYPTION'=null
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+'MAIL_USERNAME' =null
+"MAIL_PASSWORD" =null
+MAIL_ENCRYPTION=null
 ```
 * Exécuter les commandes suivantes à la racine du projet:  
 ```bash  
