@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -62,5 +63,14 @@ class ProfileController extends Controller
         }
 
         return redirect()->route('profiles.show', ['user' => $user]);
+    }
+    public function search()
+    {
+        $q = request()->input('q');
+        //dd($q);
+
+        $profiles=Profile::where('title','like','%$q%');
+
+        return view('profiles.search')->with('profiles',$profiles);
     }
 }
