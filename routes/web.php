@@ -11,6 +11,10 @@
 |
 */
 
+use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Auth;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,6 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profiles/{user}', 'ProfileController@show')->name('profiles.show');
 Route::get('/profiles/{user}/edit', 'ProfileController@edit')->name('profiles.edit');
 Route::patch('/profiles/{user}', 'ProfileController@update')->name('profiles.update');
+Route::get('/search','ProfileController@search')->name('profiles.search');
 
 Route::get('/posts', 'PostController@index')->name('posts.index');
 Route::get('/posts/create', 'PostController@create')->name('posts.create');
