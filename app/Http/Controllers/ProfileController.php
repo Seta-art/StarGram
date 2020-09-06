@@ -64,10 +64,4 @@ class ProfileController extends Controller
 
         return redirect()->route('profiles.show', ['user' => $user]);
     }
-    public function search()
-    {
-        $q = request()->input('q');
-        $Users=User::where('username','like','%$q%')->get();
-        return view('profiles.search',compact('Users'));
-    }
 }

@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    @include('partials.search')
+                    {{ __('You are logged in') }}
                 </div>
             </div>
         </div>
