@@ -2,7 +2,8 @@
 ![](https://github.com/Seta-art/StarGram/blob/master/Screenschots/Logo.PNG)
 ## Lien de télechargement la vidéo de présentaion
 Compte tenu des restrictions GitHub sur la taille maximale des fichiers a uploader dans le README, nous avons été contraint d'uploader la vidéo de cette facon.
-[VIDEO](http://we.tl/t-HVSn9n9BPq)
+
+[LIEN DE LA VIDEO](http://we.tl/t-HVSn9n9BPq)
 ## A Propos
 StarGram est un réseau social réalisé avec laravel et basé sur instagram
 
