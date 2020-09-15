@@ -32,9 +32,11 @@
     <div class="row mt-5">
     @foreach ($user->posts as $post)
             <div class="col-4">
+            <div class="mb-4">
                <a href="{{ route('posts.show', ['post' => $post->id ]) }}">
                <img src="{{ asset('storage') . '/' . $post->image }}" class="w-100">
                </a>         
+            </div>
             </div>
         @endforeach
     </div>
