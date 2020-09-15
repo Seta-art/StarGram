@@ -47,7 +47,7 @@ MAIL_ENCRYPTION=null
 
 >>php artisan key:generate 
 
->>artisan storage:link
+>>php artisan storage:link
 
 >>composer require intervention/image
 
