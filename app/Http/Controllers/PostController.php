@@ -6,6 +6,7 @@ use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
+use Intervention\Image\ImageManager;
 
 class PostController extends Controller
 {
@@ -36,7 +37,7 @@ class PostController extends Controller
         $imagePath = request('image')->store('uploads', 'public');
 
         //$image=Image::make(public_path("/storage/{$imagePath}"))->fit(1200,1200);
-        $image=Image::make(request('image')->getRealPath())->fit(1200,1200);
+        $image=Image::make(request('image')->getRealPath())->fit(300,null,function($constraint){$constraint->aspectRatio();})->encode('jpg');
         //$image->save();
         $image->stream();
     
