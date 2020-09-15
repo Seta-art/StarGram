@@ -19,8 +19,11 @@ class Profile extends Model
 
     public function getImage()
     {
-        $imagePath = $this->image ?? 'avatars/default.png';
-
+        $imagePath = $this->image;
+        if(!$this->image)
+        {
+            $imagePath='avatars/default.png';
+        }
         return "/storage/".$imagePath;
     }
 }
