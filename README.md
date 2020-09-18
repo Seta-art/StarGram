@@ -3,7 +3,7 @@
 ## Lien de télechargement la vidéo de présentaion et pièces jointes du projet
 Compte tenu des restrictions GitHub sur la taille maximale des fichiers a uploader dans le README, nous avons été contraint d'uploader la vidéo de cette facon.
 
-[LIEN DE LA VIDEO](http://we.tl/t-HVSn9n9BPq)
+[LIEN DE LA VIDEO](https://drive.google.com/file/d/1KSd9pF_IW4YgfkwSLnvX6et2fYxkQa7w/view?usp=drivesdk)
 
 [FICHE DE PROJET](https://drive.google.com/file/d/13LhLObVIbfM_WkAFyvSNRQvuT8uaFsH4/view)
 
