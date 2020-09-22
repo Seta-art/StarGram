@@ -43,6 +43,8 @@ MAIL_ENCRYPTION=null
 ```
 * Exécuter les commandes suivantes à la racine du projet:  
 ```bash  
+>>git clone https://github.com/Seta-art/StarGram.git
+  
 >>composer install
 
 >>php artisan key:generate 
